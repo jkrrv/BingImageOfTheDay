@@ -11,7 +11,6 @@ $j = json_decode($a);
 try {
 	$img = new aCurl("https://bing.com/".$j->images[0]->url);
 	$img->includeHeader(false);
-	$img->requireContent(false);
 	$img->createCurl();
 	if ($img->getHttpStatus() !=200) {
 		throw new Exception;
