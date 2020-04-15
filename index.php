@@ -2,7 +2,7 @@
 
 require_once "libs/aCurl/aCurl.php";
 
-$a = new aCurl("http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US");
+$a = new aCurl("https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US");
 
 $a->createCurl();
 
